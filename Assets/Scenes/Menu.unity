@@ -555,7 +555,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16.1714, y: -0.7411}
+  m_AnchoredPosition: {x: 0.000032425, y: 0.00001806}
   m_SizeDelta: {x: 617.7109, y: 84.6445}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &432204245
@@ -580,8 +580,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: NIGHT RUNNER
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: af28d793e2682344eb0f56935a8082ef, type: 2}
-  m_sharedMaterial: {fileID: 2099459206030806453, guid: af28d793e2682344eb0f56935a8082ef, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ab7e7572afab46043b480b317b25ed11, type: 2}
+  m_sharedMaterial: {fileID: 3233756823307046670, guid: ab7e7572afab46043b480b317b25ed11, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -641,7 +641,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -96.008484, y: 0, z: -40.763245, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1800,8 +1800,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000015259, y: 207}
-  m_SizeDelta: {x: 725.0628, y: 135.7498}
+  m_AnchoredPosition: {x: -0.000015259, y: 230}
+  m_SizeDelta: {x: 957.7985, y: 163.9597}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2133914013
 MonoBehaviour:
