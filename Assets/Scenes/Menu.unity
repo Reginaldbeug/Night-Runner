@@ -384,7 +384,6 @@ GameObject:
   - component: {fileID: 394029522}
   - component: {fileID: 394029521}
   - component: {fileID: 394029520}
-  - component: {fileID: 394029519}
   m_Layer: 5
   m_Name: Quit Button
   m_TagString: Untagged
@@ -414,18 +413,6 @@ RectTransform:
   m_AnchoredPosition: {x: -0.000029971, y: -237.2}
   m_SizeDelta: {x: 436.7606, y: 60.3866}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &394029519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 394029517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d253b24e9430b4cb48eeaed1135213, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &394029520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -469,19 +456,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 394029521}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 394029519}
-        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
-        m_MethodName: MoveToScene
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &394029521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1485,7 +1460,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
