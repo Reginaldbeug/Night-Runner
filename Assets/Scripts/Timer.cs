@@ -10,8 +10,10 @@ public class Timer : MonoBehaviour
 {
     public GameObject Clock;
     public GameObject youLose;
+    public GameObject youWin;
 
     public float timeLeft = 10.0f;
+    public float time = 3.0f;
 
     public TextMeshProUGUI timerText;
 
@@ -52,6 +54,10 @@ public class Timer : MonoBehaviour
             timeLeft = 10.0f;
 
             Clock.SetActive(false);
+
+            youWin.SetActive(true);
+
+            Destroy(youWin, time);
         }
     }
 }
