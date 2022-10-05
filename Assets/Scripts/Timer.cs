@@ -3,27 +3,55 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System.Threading;
+using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    public float timeLeft = 3.0f;
+    public GameObject Clock;
+    public GameObject youLose;
+
+    public float timeLeft = 10.0f;
 
     public TextMeshProUGUI timerText;
 
-    public GameObject youLose;
+    private void Start()
+    {
+        Clock.SetActive(false);
+    }
 
     void Update()
     {
-        if (timeLeft > 0)
+        if (Clock.activeSelf)
         {
-            timeLeft -= Time.deltaTime;
-            timerText.text = (timeLeft).ToString("0");
+            if (timeLeft > 0)
+            {
+                timeLeft -= Time.deltaTime;
+                timerText.text = (timeLeft).ToString("0");
+
+                if (timeLeft <= 0)
+                {
+                    youLose.SetActive(true);
+                    GetComponent<FirstPersonController>().enabled = false;
+                }
+            }
+        }
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Entrance"))
+        {
+            Clock.SetActive(true);
+
+            timeLeft = 10.0f;
         }
 
-        if(timeLeft <= 0)
+        if (other.gameObject.CompareTag("Exit"))
         {
-            youLose.SetActive(true);
-            GetComponent<FirstPersonController>().enabled = false;
+            timeLeft = 10.0f;
+
+            Clock.SetActive(false);
         }
     }
 }
