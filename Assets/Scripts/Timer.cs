@@ -56,8 +56,11 @@ public class Timer : MonoBehaviour
             Clock.SetActive(false);
 
             youWin.SetActive(true);
+        }
 
-            Destroy(youWin, time);
+        if (other.gameObject.CompareTag("Winner"))
+        {
+            youWin.SetActive(false);
         }
     }
 }
