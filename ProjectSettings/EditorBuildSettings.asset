@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: b547b8546f95896489292ac7947cb3ca
   - enabled: 1
-    path: Assets/Scenes/Intruction Scene.unity
+    path: Assets/Scenes/Instructions.unity
     guid: 8918d8f816651e94b84d1831bdcad5ed
   - enabled: 1
     path: Assets/Scenes/Apartment Start.unity
