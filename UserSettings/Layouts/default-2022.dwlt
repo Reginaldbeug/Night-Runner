@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 101
+  controlID: 104
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 46
+  controlID: 49
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 47
+  controlID: 50
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -189,8 +189,8 @@ MonoBehaviour:
     y: 0
     width: 297
     height: 1089
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -405,21 +405,21 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 1417}
+      scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: d64dffffa24fffffe876ffffd8a1ffffeea8ffff18a9ffff60abffff32acffff62f7ffff8cf7ffff34fbffff38610000b0610000ce620000d2630000e06300006cdc0000aadf00007ae10000b2e2000088e40000dee40000ece4000012e50000
+      m_ExpandedIDs: 589cffff8aa6ffffd2e5ffff84e9ffffe0edffff82f1ffff34fbffff986c00004a6e0000cc740000fe7400008c790000147a00009e7b00005a7c0000687c0000f8e40000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Rotating Platform 1
-        m_OriginalName: Rotating Platform 1
+        m_Name: Canvas (1)
+        m_OriginalName: Canvas (1)
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 58544
+        m_UserData: 49406
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -690,9 +690,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.5739822, y: 42.272263, z: 95.682236}
+    m_Target: {x: -26.931646, y: -82.92831, z: -44.94742}
     speed: 2
-    m_Value: {x: 1.5739822, y: 42.272263, z: 95.682236}
+    m_Value: {x: -26.931646, y: -82.92831, z: -44.94742}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -738,13 +738,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.18701687, y: 0.24292982, z: -0.04247183, w: 0.9514505}
+    m_Target: {x: 0.17171794, y: -0.82255244, z: 0.3739484, w: 0.39391893}
     speed: 2
-    m_Value: {x: 0.18517128, y: 0.24999297, z: -0.04347451, w: 0.9493815}
+    m_Value: {x: 0.17218493, y: -0.82151335, z: 0.37348706, w: 0.3949373}
   m_Size:
-    m_Target: 134.80034
+    m_Target: 76.89067
     speed: 2
-    m_Value: 134.80034
+    m_Value: 76.89139
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -810,22 +810,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/NEON SIGN/Prefabs
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/NEON SIGN/Prefabs
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Nick\Documents\GitHub\Night-Runner
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 527}
-    m_SelectedIDs: 80690000
-    m_LastClickedID: 27008
-    m_ExpandedIDs: 000000008467000086670000886700008a6700008c6700008e670000906700009267000094670000966700007e6900008269000000ca9a3b
+    scrollPos: {x: 0, y: 607}
+    m_SelectedIDs: e26b0000
+    m_LastClickedID: 27618
+    m_ExpandedIDs: 00000000586900005a6900005c6900005e69000060690000626900006469000066690000686900006a6900006c6900009e6b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -853,7 +853,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000008467000086670000886700008a6700008c6700008e67000090670000926700009467000096670000
+    m_ExpandedIDs: 00000000586900005a6900005c6900005e69000060690000626900006469000066690000686900006a6900006c690000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
