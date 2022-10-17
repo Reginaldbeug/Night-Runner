@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
 public class PauseMenu : MonoBehaviour
 {
-    public static bool GameIsPause = false;
+    [SerializeField] GameObject pauseMenu;
 
-    public GameObject pauseMenuUI;
+    public static bool GameIsPause = false;
 
     private void Update()
     {
@@ -24,31 +23,33 @@ public class PauseMenu : MonoBehaviour
             }
         }
     }
-    void Resume()
-    {
-        pauseMenuUI.SetActive(false);
-        Time.timeScale = 1f;
-        GameIsPause = false;
 
-    }
     void Pause()
     {
-        pauseMenuUI.SetActive(true);
+        pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         GameIsPause = true;
     }
-    public void LoadIntuction()
+
+    public void Resume()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        pauseMenu.SetActive(false);
+        Time.timeScale = 1f;
+        GameIsPause = false;
     }
-    public void QuitGame()
+
+    public void Intruction(int sceneID)
     {
-        Application.Quit();
-        Debug.Log("Quit!");
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(sceneID);
     }
-    public void ResetGame()
+    public void Home(int sceneID)
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(sceneID);
+    }
+    public void Reset()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-
 }
