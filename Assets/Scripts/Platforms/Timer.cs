@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using System.Threading;
 using UnityEngine.UI;
+using System.Runtime.CompilerServices;
 
 public class Timer : MonoBehaviour
 {
@@ -58,10 +59,10 @@ public class Timer : MonoBehaviour
             youWin.SetActive(true);
         }
 
-        if (other.gameObject.CompareTag("Winner"))
-        {
-            youWin.SetActive(false);
-        }
+        //if (other.gameObject.CompareTag("Winner"))
+        //{
+            //youWin.SetActive(false);
+        //}
 
         if (other.gameObject.CompareTag("Restart"))
         {
@@ -71,5 +72,13 @@ public class Timer : MonoBehaviour
         }
     }
 
-    
+    public void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Exit"))
+        {
+            youWin.SetActive(false);
+        }
+    }
+
+
 }
