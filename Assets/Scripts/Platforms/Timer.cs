@@ -35,6 +35,7 @@ public class Timer : MonoBehaviour
                 if (timeLeft <= 0)
                 {
                     youLose.SetActive(true);
+
                     GetComponent<FirstPersonController>().enabled = false;
                 }
             }
@@ -59,15 +60,12 @@ public class Timer : MonoBehaviour
             youWin.SetActive(true);
         }
 
-        //if (other.gameObject.CompareTag("Winner"))
-        //{
-            //youWin.SetActive(false);
-        //}
-
         if (other.gameObject.CompareTag("Restart"))
         {
             GetComponent<FirstPersonController>().enabled = true;
+
             youLose.SetActive(false);
+
             timeLeft = 10.49f;
         }
     }
